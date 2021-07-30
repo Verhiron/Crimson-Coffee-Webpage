@@ -275,6 +275,13 @@ html, body{
     float: right;
   }
 
+  /* only gives hover effects if the screen is laptop and above */
+  @media only screen and (min-width: 1350px)   {
+    .fa-twitter:hover, .fa-facebook:hover, #logo:hover, nav > a:hover{
+      -webkit-transform: scale(0.99);
+    }
+  }
+
   @media only screen and (min-width: 601px) and (max-width: 1440px)   {
     #logo{
       top: 15%;
