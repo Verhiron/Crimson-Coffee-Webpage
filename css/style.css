@@ -1,0 +1,464 @@
+/* custom styles here */
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Josefin Slab";
+  }
+
+  p{
+      font-size: 1.3rem;
+  }
+
+  footer{
+    left: 0;
+    padding-top: 50px;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #221105;
+  }
+
+  section{
+      margin: 0;
+  }
+
+  /*navbar styling*/
+  nav{
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background: #221105;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    border-bottom:5px solid #f1e1d1;
+  }
+  
+  /*navbar links styling*/
+  nav > a{
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin:0px auto 0px auto;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  nav > a:hover{
+      color: #f1e1d1;
+  }
+
+  /*logo positioning and size*/
+  #logo{
+    position: absolute;
+    top: 5px;
+    width: 150px;
+    border: 15px solid #221105;
+    box-shadow: 0 0 0 5px #f1e1d1;
+    border-radius:50%;
+    background-color: #221105;
+    cursor: pointer;
+  }
+
+  /*header styling*/
+
+  header{
+      text-align: center;
+  }
+
+  .banner{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .tailFrame{
+    position: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    background-image: url(../assets/pexels-kevin-menajang-982612.jpg);
+    background-size: cover;
+  }
+
+  .headFrame{
+      position: absolute;
+      top: 20%;
+      left: 25%;
+      z-index: 2;
+      width: 50%;
+  }
+  
+  .textCenter {
+    position: absolute;
+    top: 34%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 50px;
+  }
+
+  .scrollText, .fa-arrow-circle-down {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 50px;
+  }
+
+  .fa-arrow-circle-down{
+    top: 85% !important;
+  }
+
+  .article, .article3, .coffeeTypes{
+    padding: 50px;
+    display: block;
+    background-color: #312219;
+    text-align: center;
+    color: #fff;
+  }
+
+  .article3{
+    background-color: #312219;
+  }
+
+  .article2{
+    padding: 50px;
+    text-align: center;
+   /* background-color: #e7e7e7; */
+   background-color: rgb(241,225,209, 1);
+  }
+
+  .article3, .coffeeTypes{
+      padding: 10px 0px 10px 0px;
+    }
+
+  .articleTitles{
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .aboutInfo > p{
+      padding-right: 20%;
+      padding-left: 20%;
+      margin-top: 25px;
+      text-align: center;
+      z-index: 2;
+  }
+
+  .twitterMessage{
+    margin-top: 25px;
+  }
+
+  .fa-twitter, .fa-facebook{
+    color: #f1e1d1;
+    font-size: 35px;
+  }
+
+  .fa-twitter:hover, .fa-facebook:hover{
+    color: #fff;
+  }
+
+  .fa-quote-left{
+    float: left;
+    font-size: 100px;
+  }
+  .fa-quote-right{
+    float: right;
+    font-size: 100px;
+  }
+
+  .messageContainer{
+    display: block;
+    background-color: #645850;
+    padding: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  .coffeeTypes{
+    float: left;
+    width: 50%;
+    background-color: #312219;
+  }
+
+  .article3 > h2 {
+    font-size: 2rem;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+
+  .coffeeTypes > h2 {
+    font-size: 1.75rem;
+    padding: 5px;
+  }
+  
+  .coffeeTypes > p{
+    text-align: center;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 20px;
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+
+  .coffeeTypes > img {
+    margin-top: 15px;
+    max-height: 300px;
+    width: 540px;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .inputs{
+    margin-top: 25px;
+  }
+
+  .inputLeft, .inputRight{
+    display: inline-block;
+  }
+
+  input[type=text], select, textarea {
+    padding: 15px;
+    border: 2px solid #3D2B1F;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+  .sendButton{
+    width: 150px;
+    background-color: #f1e1d1;
+    color: #3D2B1F;
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor:pointer;
+    padding: 12px 20px;
+    border: 2px solid #3D2B1F;
+    border-radius: 4px;
+  }
+
+  .sendButton:hover{
+    background-color: #3D2B1F;
+    color: #f1e1d1;
+    transition: 0.5s;
+  }
+
+  .footerData1{
+    display: inline-block;
+    padding-left: 50px; 
+    padding-top: 20px;
+    color: #f1e1d1;
+  }
+
+  .footerData2{
+    float: right;
+    padding-top: 20px;
+    padding-right: 50px;
+    color: #f1e1d1;
+  }
+
+  .footer-img{
+    float: right;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1440px)   {
+    #logo{
+      top: 15%;
+      justify-content: center;
+      max-width: 100px;
+      border: 5px solid #221105;
+    }
+  
+    nav{
+      height: 50px;
+  
+    }
+  
+    nav > a {
+      font-size: 1em;
+      float: left;
+    }
+  
+    .tailFrame{
+      background-size: cover;
+    }
+  
+    .headFrame{
+      display: none;
+    }
+  
+    .textCenter {
+      font-size: 2rem;
+      width: 80%;
+      padding: 0;
+      top: 50%;
+    }
+
+    #logo{
+      top: 15%;
+      justify-content: center;
+      max-width: 100px;
+      border: 5px solid #221105;
+    }
+  
+    nav{
+      height: 50px;
+  
+    }
+  
+    nav > a {
+      font-size: 1em;
+      float: left;
+    }
+  
+    .tailFrame{
+      background-size: cover;
+    }
+  
+    .headFrame{
+      display: none;
+    }
+  
+    .textCenter {
+      font-size: 1.5rem;
+      width: 80%;
+      padding: 0;
+      top: 50%;
+    }
+
+    .scrollText, .fa-arrow-circle-down{
+      font-size: 2rem;
+    }
+
+    .messageContainer{
+      padding: 50px;
+      margin: 5px 0 0px 0;
+    }
+
+    .fa-quote-left, .fa-quote-right{
+      font-size: 25px;
+    }
+
+    .messageContainer > p {
+      font-size: 1.5rem;
+    }
+
+    .article, .article2{
+      padding: 0px;
+      width: 100%;
+    }
+
+    .sendButton{
+      margin-bottom: 10px;
+    }
+
+    .coffeeTypes{
+      width: 100%;
+    }
+
+    .coffeeTypes > img {
+      max-width: 450px;
+    }
+
+
+  }
+
+@media only screen and (max-width: 600px) {
+  #logo{
+    top: 15%;
+    justify-content: center;
+    max-width: 100px;
+    border: 5px solid #221105;
+  }
+
+  nav{
+    height: 60px;
+
+  }
+
+  nav > a {
+    font-size: 1em;
+    float: left;
+  }
+
+  .tailFrame{
+    background-size: cover;
+  }
+
+  .headFrame{
+    display: none;
+  }
+
+  .textCenter {
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 0;
+    top: 50%;
+  }
+
+  .scrollText, .fa-arrow-circle-down{
+    font-size: 2rem;
+  }
+
+  .aboutInfo > p{
+      padding: 0;
+  }
+
+  .fa-quote-left, .fa-quote-right{
+    font-size: 25px;
+  }
+
+  .messageContainer{
+    margin: 0;
+    padding: 25px;
+  }
+
+  .coffeeTypes{
+    width: 100%;
+  }
+
+  .coffeeTypes > img {
+    max-width: 90%;
+  }
+
+  .coffeeTypes > p{
+    padding: 0;
+    margin: 20px;
+  }
+
+  footer{
+      padding: 20px 0px 10px 0px;
+      text-align: center;
+  }
+  .footerData1, .footerData2{
+    padding: 20px;
+    float: none;
+  }
+
+  .footer-img{
+    float: none;
+  }
+
+  .textArea{
+    width: 200px;
+  }
+  
+  .sendButton:hover{
+    text-decoration: none;
+  }
+
+  }
