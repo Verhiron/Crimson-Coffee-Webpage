@@ -69,58 +69,50 @@ html, body{
       text-align: center;
   }
 
-  .banner{
-    display: block;
-    float: left;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .tailFrame{
-    position: block;
-    top: 0;
-    left: 0;
+  .container-banner{
+    display: flex;
+    justify-content: center;
     height: 100vh;
-    width: 100%;
-    z-index: -2;
-    background-image: url(../assets/pexels-kevin-menajang-982612.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/pexels-kevin-menajang-982612.jpg);
     background-size: cover;
   }
 
-  .headFrame{
-      position: absolute;
-      top: 20%;
-      left: 25%;
-      z-index: 2;
-      width: 50%;
+  .outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75%;
+    width: 50%;
   }
   
-  .textCenter {
+  .inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 75%;
+    width: 100%;
+  }
+
+  .container-text{
     position: absolute;
-    top: 34%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
+    z-index: 2;
+    font-size: 2em;
+    justify-content: center;
+  }
+  
+  .text-format {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 2rem;
+    color: #fff;
     text-transform: uppercase;
-    color: white;
-    padding: 50px;
-  }
-
-  .scrollText, .fa-arrow-circle-down {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    color: white;
-    padding: 50px;
-  }
-
-  .fa-arrow-circle-down{
-    top: 85% !important;
+    height: 70%;
+    font-weight: 600;
   }
 
   .article, .article3, .coffeeTypes{
@@ -129,6 +121,19 @@ html, body{
     background-color: #312219;
     text-align: center;
     color: #fff;
+  }
+
+  .scroll-btn{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .fa-arrow-circle-down{
+    color: #fff;
+    font-size: 2rem;
+    padding: 25px;
   }
 
   .article3{
@@ -308,11 +313,12 @@ html, body{
       display: none;
     }
   
-    .textCenter {
-      font-size: 2rem;
+    .text-format {
+      font-size: 1.8rem;
       width: 80%;
       padding: 0;
       top: 50%;
+      margin-top: 110px;
     }
 
     #logo{
@@ -332,23 +338,26 @@ html, body{
       float: left;
     }
   
-    .tailFrame{
-      background-size: cover;
-    }
-  
-    .headFrame{
+    .inner-container > img{
       display: none;
     }
   
-    .textCenter {
-      font-size: 1.5rem;
-      width: 80%;
-      padding: 0;
-      top: 50%;
+    .container-text{
+      display: flex;
+    }
+  
+    .text-format{
+      font-size: 1em;
+    }
+  
+    .scroll-btn{
+      display: flex;
+      text-align: center;
+      font-size: 2em
     }
 
-    .scrollText, .fa-arrow-circle-down{
-      font-size: 2rem;
+    .fa-arrow-circle-down{
+      font-size: 50px;
     }
 
     .messageContainer{
@@ -402,23 +411,23 @@ html, body{
     float: left;
   }
 
-  .tailFrame{
-    background-size: cover;
-  }
-
-  .headFrame{
+  .inner-container > img{
     display: none;
   }
 
-  .textCenter {
-    font-size: 1.5rem;
-    width: 80%;
-    padding: 0;
-    top: 50%;
+  .container-text{
+    display: flex;
   }
 
-  .scrollText, .fa-arrow-circle-down{
-    font-size: 2rem;
+  .text-format{
+    font-size: 1.5rem;
+    margin-top: 110px;
+  }
+
+  .scroll-btn{
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .aboutInfo > p{
